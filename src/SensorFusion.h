@@ -78,6 +78,16 @@ public:
 		return _copyQuat;
 	}
 
+	void setBeta(float beta) {
+		this->beta = beta;
+	}
+	void setKp(float Kp) {
+		this->twoKp = Kp;
+	}
+	void setKi(float Ki) {
+		this->twoKi = Ki;
+	}
+
 private:
 	float beta;				//Madgwick: 2 * proportional gain
 	float twoKp;			//Mahony: 2 * proportional gain (Kp)
